@@ -267,9 +267,9 @@ img {
   position: relative;
   background-image:
     url('./assets/images/final.JPG');
-
   background-size: cover;
   background-position: center;
+  margin-top: 80px;
 }
 
 .final-content {
@@ -333,4 +333,267 @@ img {
     grid-template-columns: repeat(4, 1fr);
   }
 
+}
+
+/* ========================================
+   WEDDING-CARD.HTML - HEADER SECTION
+   ======================================== */
+
+/* Header top bar decoration */
+.header-top-bar {
+  background-color: #7c151a;
+  height: 70px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  padding-top: 0;
+  padding-bottom: 32px;
+}
+
+header > div:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+header > div:first-child img {
+  width: 310px;
+  height: auto;
+}
+
+header > div:nth-child(2) {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 0;
+  margin-top: 15px;
+  color: #000;
+  font-family: 'The Nautigal', cursive;
+}
+
+header > div:nth-child(2) > div:first-child {
+  font-size: 65px;
+  line-height: 72px;
+}
+
+header > div:nth-child(2) > div:nth-child(2) {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+header > div:nth-child(2) > div:last-child {
+  font-size: 65px;
+  line-height: 72px;
+}
+
+header > div:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  margin-top: -20px;
+}
+
+header > div:last-child img {
+  width: 310px;
+  height: auto;
+  transform: scaleX(-1);
+}
+
+/* ========================================
+   WEDDING-CARD.HTML - COUPLE & FAMILY INFO SECTION
+   Color Scheme: Primary color #eb2135
+   Background: #faf7f2 (light beige)
+   ======================================== */
+
+/* Couple & Family Section Container */
+.couple-family-section {
+  background-color: #faf7f2 !important;
+  text-align: center;
+}
+
+/* Parents / Grandparents Info Grid */
+.family-info-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* Family Card Container (Nhà Trai / Nhà Gái) */
+.family-card-container {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Family Card Content (flex-grow container) */
+.family-card-content {
+  flex-grow: 1;
+}
+
+.family-card-content > p:first-child {
+  margin-bottom: 12px;
+}
+
+/* Family Card Relation Label (Bà, Ông/Bà) */
+.family-relation {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+/* Family Card Names */
+.family-names {
+  font-size: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.2em;
+}
+
+/* Family Card Address */
+.family-address {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Announcement Text */
+.announcement-text {
+  font-size: 16px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Couple Names Section */
+.couple-names-section {
+  margin-bottom: 30px;
+}
+
+/* Couple Name (h2) - Primary Color #eb2135 */
+.couple-names-section > h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px;
+  color: #8B1538;
+  margin-bottom: 8px;
+}
+
+/* Couple Subtitle */
+.couple-subtitle {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Couple Separator (&) */
+.couple-separator {
+  font-size: 42px;
+  color: #333;
+}
+
+/* Wedding Details Section */
+.wedding-details {
+  margin-bottom: 20px;
+}
+
+/* Wedding Details Text */
+.wedding-details > p:nth-child(1),
+.wedding-details > p:nth-child(3) {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+/* Wedding Location Name (TƯ GIA) */
+.wedding-location {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Date Container (flexbox with separators) */
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Date Separators */
+.date-separator {
+  opacity: 0.3;
+}
+
+/* Date Number */
+.date-number {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Year */
+.year {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Lunar Date */
+.lunar-date {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* Header Responsive Design */
+@media (min-width: 768px) {
+  header > div:first-child {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  header > div:first-child img {
+    width: 580px;
+  }
+
+  header > div:nth-child(2) {
+    margin-top: 85px;
+  }
+
+  header > div:nth-child(2) > div:first-child {
+    font-size: 91px;
+    line-height: 100px;
+  }
+
+  header > div:nth-child(2) > div:nth-child(2) {
+    font-size: 65px;
+    line-height: 72px;
+  }
+
+  header > div:nth-child(2) > div:last-child {
+    font-size: 91px;
+    line-height: 100px;
+  }
+
+  header > div:last-child {
+    padding-bottom: 75px;
+    margin-top: -70px;
+  }
+
+  header > div:last-child img {
+    width: 580px;
+  }
 }
